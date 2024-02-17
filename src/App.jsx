@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "../src/views/Home/Home";
 import Landing from "../src/views/Landing/Landing";
-import NotFound from "./views/NotFound";
+import NotFound from "./views/Not Found/NotFound";
 
 function App() {
   return (
