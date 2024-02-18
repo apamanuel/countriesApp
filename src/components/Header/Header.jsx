@@ -1,5 +1,5 @@
 import style from "../Header/Header.module.css";
-import logo from "../../../public/assets/logo.png";
+import logo from "../../assets/logo.png";
 const Header = () => {
   return (
     <div className={style.container}>

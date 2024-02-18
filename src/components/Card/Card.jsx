@@ -1,7 +1,7 @@
 import style from "../Card/Card.module.css";
-import red from "../../../public/assets/red.png";
-import brown from "../../../public/assets/brown.png";
-import green from "../../../public/assets/green.png";
+import red from "../../assets/red.png";
+import brown from "../../assets/brown.png";
+import green from "../../assets/green.png";
 import { useState } from "react";
 
 const props = {
