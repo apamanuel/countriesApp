@@ -4,15 +4,8 @@ import brown from "../../assets/brown.png";
 import green from "../../assets/green.png";
 import { useState } from "react";
 
-const props = {
-  name: "Venezuela",
-  code: "VE",
-  language: "spanish",
-  currency: "VES",
-};
-
-const Card = () => {
-  const { name, code, language, currency } = props;
+const Card = (props) => {
+  const { name, code, continent, languages, currency } = props.country;
 
   const [colorCard, setColorCard] = useState("#158C03");
   const [border, setBorder] = useState("2px solid black");
@@ -23,7 +16,6 @@ const Card = () => {
     } else setBorder("2px solid black");
   };
 
-  console.log(colorCard);
   return (
     <div
       className={style.container}
@@ -52,9 +44,10 @@ const Card = () => {
       <h3 className={style.name} onClick={handlerClick}>
         {name}
       </h3>
-      <ul>
+      <ul className={style.list}>
         <li>Code: {code}</li>
-        <li>Language: {language}</li>
+        <li>Continent: {continent}</li>
+        <li>Language: {languages}</li>
         <li>Currency: {currency}</li>
       </ul>
     </div>
