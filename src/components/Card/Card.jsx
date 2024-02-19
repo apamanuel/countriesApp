@@ -1,5 +1,5 @@
 import style from "../Card/Card.module.css";
-import red from "../../assets/red.png";
+import grey from "../../assets/grey.png";
 import brown from "../../assets/brown.png";
 import green from "../../assets/green.png";
 import { useState } from "react";
@@ -7,7 +7,7 @@ import { useState } from "react";
 const Card = (props) => {
   const { name, code, continent, languages, currency } = props.country;
 
-  const [colorCard, setColorCard] = useState("#158C03");
+  const [colorCard, setColorCard] = useState("#F2F2F2 ");
   const [border, setBorder] = useState("2px solid black");
 
   const handlerClick = () => {
@@ -23,10 +23,10 @@ const Card = (props) => {
     >
       <div className={style.colorBar}>
         <img
-          src={red}
-          alt="red"
-          className={style.redBtn}
-          onClick={() => setColorCard("#F20519")}
+          src={grey}
+          alt="grey"
+          className={style.greyBtn}
+          onClick={() => setColorCard("#F2F2F2")}
         />
         <img
           src={brown}

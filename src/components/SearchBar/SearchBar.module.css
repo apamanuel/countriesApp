@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+}
+.search{
+    display: flex;
+    width: 400px;
+    height: 30px;
+    margin-right: 40px;
+}
+.input{
+    width: 300px;
+}
+.submit{
+    width:90px;
+    background-color: #F2F2F2 ;
+}
+.select{
+    height: 30px;
+    width: 180px;
+    background-color: #F2F2F2 ;
+}

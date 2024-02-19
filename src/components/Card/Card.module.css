@@ -21,7 +21,7 @@
     justify-content:center;
     margin-left: 180px;
 }
-.redBtn{
+.greyBtn{
     height: 40px;
     grid-column: 1/2;
     grid-row: 1/2;
